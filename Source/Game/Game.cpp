@@ -66,19 +66,10 @@ void CGame::draw()
 
     if( Ball->isActive() )
     {
-        Ball->draw();
+        //Ball->draw(); //hide temporary
     }
 
-    //CShape shape;
-    //shape.draw();
-
-    //CRectengle rectengle;
-    //rectengle.draw();
-
-    //CShape* shape = new CRectengle;
-    //shape->draw();
-
-    Player->draw();
+    //Player->draw(); // hide temporary
 
     // draw shapes
     for (auto value : AddShapes)
