@@ -21,10 +21,10 @@ void CShape::resetScale() { Scale = 1; }
 
 void CShape::breathingScale()
 {
-	AddBreath += 1;
+	AddBreath += 2;
 	double breath = AddBreath * (3.14 / 180.0);
-	Breathing.X =sin(breath) + Scale.X;
-	Breathing.Y =sin(breath) + Scale.Y;
+	Breathing.X = 0.25 * sin(breath) + Scale.X;
+	Breathing.Y = 0.25 * sin(breath) + Scale.Y;
 }
 
 

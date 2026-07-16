@@ -11,9 +11,9 @@ CTriangle::~CTriangle()
 
 void CTriangle::draw()
 {
-	DrawLine(Position.X, Position.Y, Position.X + v1.X * Scale.X, Position.Y + v1.Y * Scale.Y, ObjectColor);
-	DrawLine(Position.X, Position.Y, Position.X + Scale.X * setTrianglePoint(v1.X, 60).X, Position.Y + Scale.Y * setTrianglePoint(v1.X, 60).Y, ObjectColor);
-	DrawLine(Position.X + Scale.X * setTrianglePoint(v1.X, 60).X, Position.Y + Scale.Y * setTrianglePoint(v1.X, 60).Y, Position.X + v1.X * Scale.X, Position.Y + v1.Y * Scale.Y, ObjectColor);
+	DrawLine(Position.X, Position.Y, Position.X + v1.X * Breathing.X, Position.Y + v1.Y * Breathing.Y, ObjectColor);
+	DrawLine(Position.X, Position.Y, Position.X + Breathing.X * setTrianglePoint(v1.X, 60).X, Position.Y + Breathing.Y * setTrianglePoint(v1.X, 60).Y, ObjectColor);
+	DrawLine(Position.X + Breathing.X * setTrianglePoint(v1.X, 60).X, Position.Y + Breathing.Y * setTrianglePoint(v1.X, 60).Y, Position.X + v1.X * Breathing.X, Position.Y + v1.Y * Breathing.Y, ObjectColor);
 
 }
 

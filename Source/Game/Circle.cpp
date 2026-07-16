@@ -11,5 +11,5 @@ CCircle::~CCircle()
 
 void CCircle::draw()
 {
-	DrawCircle(Position.X, Position.Y, Radius * Scale.X, ObjectColor);
+	DrawCircle(Position.X, Position.Y, Radius * Breathing.X, ObjectColor);
 }
