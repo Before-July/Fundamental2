@@ -26,7 +26,7 @@ void CSakura::draw()
         int angle = (360 / 5) * (i + 1);
         DrawLine(Position.X, Position.Y, Position.X + setRoundPosition(40, angle).X * Breathing.X, Position.Y - setRoundPosition(40, angle).Y * Breathing.Y, ObjectColor);
     }
-    for (int i = 0; i < 5; i++) // round of circle
+    for (int i = 0; i < 5; i++) // third round of circle
     {
         int angle = (360 / 5) * (i + 1);
         DrawCircle(Position.X + setRoundPosition(40, angle).X * Breathing.X, Position.Y - setRoundPosition(40, angle).Y * Breathing.Y, 5 * Breathing.X, ObjectColor);
