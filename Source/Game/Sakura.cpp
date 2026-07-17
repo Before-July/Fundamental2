@@ -39,7 +39,7 @@ void CSakura::draw()
 vec2 CSakura::setRoundPosition(float radius, double angle)
 {
     vec2 position;
-    double roundAngle = angle * (3.14 / 180.0);
+    double roundAngle = angle * (3.14 / 180.0); ////
     position.X = radius * std::cos(roundAngle);
     position.Y = radius * std::sin(roundAngle);
     return position;
